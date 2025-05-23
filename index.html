@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんゲーム</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- スタート画面 -->
+  <div id="start-screen">
+    <div class="start-frame">
+      <h1>じゃんけんゲームへようこそ！</h1>
+      <button id="start-button">スタート！</button>
+    </div>
+  </div>
+
+  <!-- ゲーム本体 -->
+  <div id="main-game" style="display: none;">
+    <div class="game-frame">
+      <h1>じゃんけんしよう！</h1>
+
+      <div class="buttons">
+        <img src="img/gu.jpg" class="hand" data-choice="グー" title="グー">
+        <img src="img/cho.jpg" class="hand" data-choice="チョキ" title="チョキ">
+        <img src="img/pa.jpg" class="hand" data-choice="パー" title="パー">
+      </div>
+
+      <div class="result">
+        <div class="hands-display">
+          <div>
+            <p>あなたの手：</p>
+            <div id="player-hand"></div>
+          </div>
+          <!-- ここに掛け声を挿入 -->
+  <div id="chant-middle">
+    <span id="jan">じゃん</span>
+    <span id="ken">けん</span>
+    <span id="pon">ぽん</span>
+  </div>
+          <div>
+            <p>コンピューターの手：</p>
+            <div id="computer-hand"></div>
+          </div>
+        </div>
+        <p id="outcome">結果：-</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
